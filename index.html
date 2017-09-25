@@ -26,7 +26,7 @@
 			 <i>Веб-страницы</i> <b>(или HTML-страницы)</b> — это простейшие кирпичики, из которых состоят все сайты,<br>а значит, весь <em>Интернет</em>.<br>
 			 Сделал приложение под <ins>Android</ins> в виде викторины для проверки знаний по <del>HTML</del>. Приложение экспериментальное, хочется понять, а надо ли вообще подобное делать. По этой причине приложение не доделано и находится в статусе альфа-версии. Впрочем, недоделанным его называю только сам, потому что не все желаемые темы охвачены. Но уже сейчас в базе 176 вопросов по шести темам: основы HTML, списки, ссылки, таблицы, текст, формы. Вопросы выводятся случайно, всех их сразу и не увидеть, для каждого они будут свои, так что имеет смысл проходить викторину несколько раз.
 		</p>
-		<img src="image/im.jpg" alt="Bat" width="180" height="170">
+		<a href="image/im8.jpg"><img src="image/im.jpg" alt="Bat" width="180" height="170"></a>
 		<img src="image/gi3.gif" width="180" height="170">
 		<img src="image/gi2.gif" width="180" height="170">
 			<blockquote>
@@ -45,7 +45,7 @@
 	 		<tr>
 	 			<th>1</th>
 	 			<th>2</th>
-	 			<th rowspan="3">3</th>
+	 			<th rowspan="3" valign="top">3</th>
 	 		</tr>
 	 		<tr>
 	 			<td colspan="2">4</td>
@@ -56,20 +56,43 @@
 	 		</tr>
 	 	</table>
 	 	<br>
-	 	<br>
-	 	<br>
-
+		<br>
+			<form action="#">
+				<table for="first_name">Ваше имя:</table><input type="text" name="first_name" placeholder="введите ваше имя"><br>
+				<table for="password">Ваш пароль:</table><input type="password" id="password" placeholder="введите ваш пароль"><br>
+				<input type="checkbox" value="1" name="remember">Запомнить меня<br>
+				Ваш пол: <input type="radio" value="male" name="sex">Мужской | <input type="radio" value="female" name="sex">Женский<br>
+				<textarea name="comments" rows="5" cols="20" placeholder="введите ваши комментарии"></textarea><br>
+				<input type="submit" name="submit" value="Отправить">
+		</form>
+		<br>
 		<a class="MAIL" href="http://www.mail.ru" target="_blank" title='"Социальная сеть"'>MAIL.RU</a><br>
 		<a href="#w"> Наша академия</a>
 			</div>
 			<div class="D3">
-				qwerty3
+				<ol>
+					<li><a href="#">Список1</a></li>
+					<li><a href="#">Список2</a>
+						<ul>
+							<li><a href="#">элемент списка</a></li>
+							<li><a href="#">элемент списка1</a></li>
+							<li><a href="#">элемент списка2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Список3</a></li>
+				</ol>
 			</div>
 		</div>
 		<footer class="D4">
 		<address>
-			Адрес: г. Худжанд<br> Телефон: +992927788925<br> E-mail: <a href="mailto://bahovaddin89@gmail.com"> bahovaddin89@gmail.com</a>
+			Адрес: г. Худжанд<br> Телефон: +992927788925<br> E-mail: <a href="mailto://bahovaddin89@gmail.com"> bahovaddin89@gmail.com</a><br>
+	 	<form>
+				<input type="text" name="firat_name" placeholder="Поиск по сайту">
+				<input type="submit" name="submit" value="ПОИСК">
+		</form>
 		</address>
+		<br>
+		<br>
 		</footer>
 
 
